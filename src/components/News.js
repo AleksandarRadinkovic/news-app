@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { Link } from "react-router-dom";
+
+
 
 const News = props => (
 
     <div className="container">
+        <div>{props.categoryTitle.length > 0 ? props.categoryTitle : ''}</div>
         <div className="row">
+            
             {props.news.map((oneNews) =>{
+                console.log(oneNews)
                 return (
                     <div className="col-md-4" style={{marginBottom:"2rem"}}>
                         <div className="news__box">

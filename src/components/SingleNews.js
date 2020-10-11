@@ -21,8 +21,11 @@ class SingleNews extends React.Component {
         const container = this.state.activeNews;
         console.log(this.props);
         return (
-            <div className="container">
-                
+            <div>
+            <header className="App-header">
+                <Link to="/" className="App-title">News</Link>
+            </header>
+            <div className="container ">
                 {this.state.activeNews.length !== 0 &&
                 <div className="active-news">
                     <h3 className="active-news__title">{ container.title }</h3>
@@ -34,6 +37,7 @@ class SingleNews extends React.Component {
                     <Link to="/" className="active-news__button">Go Back</Link>
                 </div>
                 }
+            </div>
             </div>
         )
     }

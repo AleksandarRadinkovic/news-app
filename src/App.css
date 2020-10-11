@@ -162,3 +162,39 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-weight: 500;
 }
+.form-select1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.form-select2{
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.App-title {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff !important;
+}
+.App-title:hover {
+  text-decoration: none;
+}
+@media screen and (max-width: 600px){
+  .form__input{
+    width: 40%;
+    margin-bottom: 15px;
+  }
+  .form__button{
+    width: 40%;
+  }
+  .form-control{
+    width: 40%;
+  }
+  .active-news {
+    width: 80%;
+  }
+  .active-news__img {
+    height: auto !important;
+  }
+}
